@@ -5,6 +5,7 @@ import {auth} from "../../services/firebaseConnection"
 
 export function Header(){
 
+    //Desloga o usuario
     async function handleLogout(){
        await  signOut(auth)
     }

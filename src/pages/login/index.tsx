@@ -3,7 +3,7 @@ import { Input } from "../../components/Input";
 import { FormEvent, useState } from "react";
 
 import {auth} from "../../services/firebaseConnection"
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth"; //função para fazer login no Firebase usando e-mail e senha.
 
 
 export function Login() {
@@ -20,10 +20,10 @@ export function Login() {
       return
     }
 
-    //Sistema do login
+    //Sistema do login (função do Firebase Authentication)
     signInWithEmailAndPassword(auth, email, password)
     .then(() => {
-      navigate("/admin", {replace: true})
+      navigate("/admin", {replace: true}) //Faz o navegador não guardar a página de login no histórico
       console.log("Logado")
     })
     .catch((e) => {
@@ -41,6 +41,8 @@ export function Login() {
         </Link>
 
         <form onSubmit={handleSubmit} className="w-full max-w-xl flex flex-col px-2">
+
+          {/* Componente de input personalizado */}
           <Input
             placeholder="DIgite o seu email"
             type="email"
