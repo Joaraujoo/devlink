@@ -2,7 +2,13 @@
 Aplicação web desenvolvida com React para criar e gerenciar links personalizados, ideal para portfólios e redes sociais.
 
 # 🌐 Acesse agora
-https://devlink-lovat.vercel.app/
+Home: https://devlink-lovat.vercel.app/
+
+Admin: https://devlink-lovat.vercel.app/admin
+
+Login:
+📧teste@teste.com
+🔑123123
 
 # 🧠 Funcionalidades
 Criação de links personalizados com título, URL e ícone.
