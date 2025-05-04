@@ -3,6 +3,7 @@ import { Home } from "./pages/home"
 import { Login } from "./pages/login"
 import { Admin } from "./pages/admin"
 import { Networks } from "./pages/networks"
+import { ErrorPage } from "./pages/error"
 
 import { Private } from "./routes/privete"
 
@@ -23,6 +24,10 @@ import { Private } from "./routes/privete"
     {
       path: "/admin/social",
       element: <Private><Networks/></Private>
+    },
+    {
+      path: "*",
+      element: <ErrorPage/>
     }
   ])
 
